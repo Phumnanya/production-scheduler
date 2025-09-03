@@ -10,9 +10,9 @@ type Store = {
 
 export const useStore = create<Store>((set) => ({
   resources: [
-    { id: 1, name: "CNC Machine 1", status: "Available" },
-    { id: 2, name: "Assembly Line A", status: "Available" },
-    { id: 3, name: "Assembly Line B", status: "Available" }
+    { id: 1, name: "CNC Machine 1", quantity: 0, status: "Available" },
+    { id: 2, name: "Assembly Line A", quantity: 0, status: "Available" },
+    { id: 3, name: "Assembly Line B", quantity: 0, status: "Available" }
   ],
   orders: [],
   addOrder: (order) =>
